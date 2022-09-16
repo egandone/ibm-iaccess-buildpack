@@ -6,4 +6,4 @@ CACHE_DIR=$2
 DEPS_DIR=$3
 DEPS_IDX=$4
 
-apt install ibm-iaccess-1.1.0.15-1.0.amd64.deb
+dpkg -i ibm-iaccess-1.1.0.15-1.0.amd64.deb
