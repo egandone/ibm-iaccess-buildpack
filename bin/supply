@@ -15,6 +15,6 @@ ls -l
 export BUILDPACK_DIR=`dirname $(readlink -f ${BASH_SOURCE%/*})`
 echo -e "buildpack_dir = $BUILDPACK_DIR"
 
-curl -I https://raw.githubusercontent.com/egandone/ibm-iaccess-buildpack/main/ibm-iaccess-1.1.0.15-1.0.amd64.deb
+curl -O https://raw.githubusercontent.com/egandone/ibm-iaccess-buildpack/main/ibm-iaccess-1.1.0.15-1.0.amd64.deb
 
 dpkg -x ibm-iaccess-1.1.0.15-1.0.amd64.deb $BUILD_DIR/.apt/
