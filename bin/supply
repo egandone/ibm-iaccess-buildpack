@@ -1,9 +1,13 @@
 #!/bin/bash
 set -euo pipefail
 
+set -x 
+
 BUILD_DIR=$1
 CACHE_DIR=$2
 DEPS_DIR=$3
 DEPS_IDX=$4
 
-dpkg -i ibm-iaccess-1.1.0.15-1.0.amd64.deb
+mkdir -p $BUILD_DIR/.apt
+
+dpkg -x ibm-iaccess-1.1.0.15-1.0.amd64.deb $BUILD_DIR/.apt/
