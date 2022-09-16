@@ -1,0 +1,12 @@
+---
+language: apt
+default_versions: []
+dependency_deprecation_dates: []
+dependencies: []
+pre_package: 
+include_files:
+- bin/compile
+- bin/supply
+- bin/detect
+- manifest.yml
+- ibm-iaccess-1.1.0.15-1.0.amd64.deb
